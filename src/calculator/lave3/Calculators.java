@@ -2,8 +2,7 @@ package calculator.lave3;
 import java.util.ArrayList;
 import java.util.List;
 
-enum calculatingmachine
-{
+enum calculatingmachine{
     ADDITION("+"),
     SUBTRACTION("-"),
     MULTIPLICATION("*"),
@@ -11,13 +10,11 @@ enum calculatingmachine
 
     private String operator;
 
-    private calculatingmachine(String operator)
-    {
+    private calculatingmachine(String operator){
         this.operator = operator;
     }
 
-    public String getOperator()
-    {
+    public String getOperator(){
        return operator;
     }
 }
@@ -75,8 +72,7 @@ public class Calculators
         return result;
     }
 
-    public void removeResult()
-    {
+    public void removeResult(){
         Calculator.remove(Calculator.get(0));
     }
 

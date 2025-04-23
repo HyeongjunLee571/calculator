@@ -38,8 +38,7 @@ public class Calculator
         return sum;
     }
 
-    public void removeResult()
-    {
+    public void removeResult(){
         Calculator.remove(Calculator.get(0));
     }
 }
