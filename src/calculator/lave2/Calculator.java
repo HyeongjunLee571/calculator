@@ -23,20 +23,16 @@ public class Calculator
     }// 수정 구현
 
     public int calculate(int firstNumber, String calculation, int secondNumber) {
-        if("+".equals(calculation))
-        {
+        if("+".equals(calculation)) {
             sum = firstNumber + secondNumber;
         }
-        else if("-".equals(calculation))
-        {
+        else if("-".equals(calculation)) {
             sum = firstNumber - secondNumber;
         }
-        else if("*".equals(calculation))
-        {
+        else if("*".equals(calculation)) {
             sum = firstNumber * secondNumber;
         }
-        else if("/".equals(calculation))
-        {
+        else if("/".equals(calculation)) {
             sum = firstNumber / secondNumber;
         }
         return sum;

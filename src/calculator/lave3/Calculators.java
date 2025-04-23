@@ -80,8 +80,7 @@ public class Calculators
         Calculator.remove(Calculator.get(0));
     }
 
-    public void setSum2()
-    {
+    public void setSum2() {
         List<Number> comparisonvalue = Calculator.stream()
                 .filter(Value -> Value.doubleValue() > firstNumber && Value.doubleValue() > secondNumber)
                 .toList(); // 복습 //필터링된 스트림을 리스트 형식으로 변환
