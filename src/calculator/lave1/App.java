@@ -11,8 +11,7 @@ public class App
         int division;
 
         Scanner scanner = new Scanner(System.in);
-        for(int i = 0 ; i < 100 ; i++)
-        {
+        for(int i = 0 ; i < 100 ; i++) {
             System.out.println('\n'+"첫번째 숫자를 입력하세요: ");
             int first = scanner.nextInt();
             System.out.println("사칙연산 기호를 입력하세요: ");
@@ -21,8 +20,7 @@ public class App
             System.out.println("두번째 숫자를 입력하세요: ");
             int second = scanner.nextInt();
 
-            if (0 == second && "/".equals(sign))
-            {
+            if (0 == second && "/".equals(sign)) {
                 System.out.println("나눗셈 연산에서 분모(두번째 정수)에 0이 입력될 수 없습니다."+'\n');
                 continue;
             }
@@ -44,8 +42,7 @@ public class App
             System.out.println("계속 계산하시겠습니까?");
             String end = scanner.next();
 
-            if("exit".equals(end))
-            {
+            if("exit".equals(end)) {
                 System.out.println("계산기를 종료합니다 감사합니다."+'\n');
                 break;
             }

@@ -12,20 +12,17 @@ public class Calculator
     //상위 리스트에서 하위 리스트를 받아 사용하기 위해 위와같이 선언
     //반대로 선언할 시 하위에서 > 상위로 되기때문에 하위에 있는 기능 사용이 어려움
 
-    public List<Integer> getCalculator()
-    {
+    public List<Integer> getCalculator() {
        System.out.println(Calculator);
        return Calculator;
     } // 켈럭터 가져오는거 구현
 
-    public void setCalculator(int sum)
-    {
+    public void setCalculator(int sum) {
         this.sum = sum;
         Calculator.add(sum);
     }// 수정 구현
 
-    public int calculate(int firstNumber, String calculation, int secondNumber)
-    {
+    public int calculate(int firstNumber, String calculation, int secondNumber) {
         if("+".equals(calculation))
         {
             sum = firstNumber + secondNumber;

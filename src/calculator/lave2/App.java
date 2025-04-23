@@ -9,8 +9,7 @@ public class App
         int result;
         Calculator cal = new Calculator();
         Scanner scanner = new Scanner(System.in);
-        for(int i = 0 ; i < 100 ; i++)
-        {
+        for(int i = 0 ; i < 100 ; i++) {
             System.out.println('\n'+"첫번째 숫자를 입력하세요: ");
             int first = scanner.nextInt();
             System.out.println("사칙연산 기호를 입력하세요: ");
@@ -22,8 +21,7 @@ public class App
             //Calculator cal = new Calculator(first,sign,second);//직접 입력은 생성자로 활용이 어렵다.
             cal.calculate(first,sigh,second);
 
-            if (0 == second && "/".equals(sigh))
-            {
+            if (0 == second && "/".equals(sigh)) {
                 System.out.println("나눗셈 연산에서 분모(두번째 정수)에 0이 입력될 수 없습니다."+'\n');
                 continue; //해당 기능 사용해도 괜찮은지?
             }
@@ -34,8 +32,7 @@ public class App
             System.out.println("계속 계산하시겠습니까?");
             String end = scanner.next();
 
-            if("exit".equals(end))
-            {
+            if("exit".equals(end)) {
                 cal.removeResult();//< 삭제 기능 가져오기
                 System.out.print("첫번째 숫자를 삭제한 후 나머지 수: ");
                 cal.getCalculator();// 배열 출력 방법
