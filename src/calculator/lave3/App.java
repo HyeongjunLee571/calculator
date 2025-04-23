@@ -1,4 +1,4 @@
-package calculate.lave3;
+package calculator.lave3;
 import java.text.ParseException;
 import java.util.Scanner;
 

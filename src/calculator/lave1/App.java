@@ -1,4 +1,4 @@
-package calculate.lave1;
+package calculator.lave1;
 import java.util.Scanner;
 
 public class App

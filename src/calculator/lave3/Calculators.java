@@ -1,4 +1,4 @@
-package calculate.lave3;
+package calculator.lave3;
 import java.util.ArrayList;
 import java.util.List;
 
