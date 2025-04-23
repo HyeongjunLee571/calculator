@@ -1,4 +1,4 @@
-package calculate.lave1.generic;
+package calculate.generic;
 
 public class Main
 {

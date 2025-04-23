@@ -1,4 +1,4 @@
-package calculate.lave1.lave2;
+package calculate.lave2;
 
 //import java.io.BufferedOutputStream;
 
