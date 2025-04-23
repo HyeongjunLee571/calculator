@@ -14,7 +14,7 @@ public class App
             double first = scanner.nextDouble();
             System.out.println("사칙연산 기호를 입력하세요: ");
             String sigh = scanner.next();
-            char sign = sigh.charAt(0); // 튜터님께 물어보기 꼭 사용해야하는지(?)
+            //char sign = sigh.charAt(0); // 튜터님께 물어보기 꼭 사용해야하는지(?)
             System.out.println("두번째 숫자를 입력하세요: ");
             double second = scanner.nextDouble();
 
@@ -34,15 +34,15 @@ public class App
                 cal.setCalculator(result);
             }
 
-            System.out.println("계속 계산하시겠습니까?");
+            System.out.println("계속 계산하시겠습니까? (yes입력 시 계속 진행 / exit 입력 시 종료 및 첫번째 값 삭제 확인과 리스트 확인)");
             String end = scanner.next();
 
-            if ("exit".equals(end)) {
+            if("exit".equals(end)) {
                 cal.removeResult();//< 삭제 기능 가져오기
-                System.out.print("첫번째 숫자를 삭제한 후 나머지 수: ");
-                cal.getCalculator();// 배열 출력 방법
                 System.out.println("계산기를 종료합니다 감사합니다."+'\n');
-                cal.setSum2();
+                System.out.print("첫번째 숫자를 삭제한 후 나머지 수: ");
+                cal.getCalculator();// 컬렉션 출력 방법
+                cal.setSum2();//컬렉션중 가장 큰 값 및 작은 값 출력
                 break;
             }
         }
